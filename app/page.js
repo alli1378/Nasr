@@ -73,7 +73,7 @@ export default function Home() {
         {/* <span class="brand-mark" aria-hidden="true"><span></span><i></i></span>
         <span class="font-brand text-[30px] leading-none tracking-wide text-white">Nasr</span>
          */}
-        <img src="/assets/logo.png" className="w-28 h-28" alt="" />
+        <img src="/Nasr/assets/logo.png" className="w-28 h-28" alt="" />
 
       </a>
 
