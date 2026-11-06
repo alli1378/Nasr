@@ -23,12 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-<<<<<<< HEAD
         with:
           persist-credentials: true
-=======
-
->>>>>>> be96d38 (Update deployment workflow)
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
