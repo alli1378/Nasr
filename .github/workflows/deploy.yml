@@ -1,10 +1,10 @@
+
 name: Deploy Next.js to GitHub Pages
 
 on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -22,23 +22,28 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build project
         run: npm run build
-      - name: Check build output
+
+      - name: Check output
         run: |
-          echo "=== OUT ==="
-          find out -type f | sort
+          echo "Checking output directory..."
+          ls -la
+          test -d out
+          test -f out/index.html
+          find out -type f | head -30
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -55,12 +60,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    permissions:
-      pages: write
-      id-token: write
-
     steps:
       - name: Deploy
-
         id: deployment
         uses: actions/deploy-pages@v4
