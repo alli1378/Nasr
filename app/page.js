@@ -85,7 +85,7 @@ export default function Home() {
       </nav>
 
       <div className="flex items-center gap-3">
-        <a href="/assets/your-cv.pdf" download className="button button--outline hidden sm:inline-flex">
+        <a href="/Nasr/assets/your-cv.pdf" download className="button button--outline hidden sm:inline-flex">
           Get My CV
           <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.75v9.5m0 0 3.5-3.5M10 12.25l-3.5-3.5M3.5 13.75v2.5h13v-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </a>
@@ -99,7 +99,7 @@ export default function Home() {
             <a href="#skills">Skill</a>
             <a href="#projects">Projects</a>
             {/* <a href="#about">About me</a> */}
-            <a href="/assets/your-cv.pdf" download className="mobile-cv-link">Get My CV <span>↗</span></a>
+            <a href="/Nasr/assets/your-cv.pdf" download className="mobile-cv-link">Get My CV <span>↗</span></a>
           </nav>
         </details>
       </div>
@@ -114,7 +114,7 @@ export default function Home() {
         <div className="hero-visual relative mx-auto mt-5 h-[510px] w-full max-w-[650px] sm:h-[610px] lg:mt-0 lg:h-[720px] lg:max-w-none">
           <div className="portrait-halo" aria-hidden="true"></div>
           <div className="portrait-frame" aria-hidden="true"></div>
-          <img src="/assets/aliimg.png"  alt="Illustrated portrait of Alireza wearing an orange jacket" className="hero-portrait" />
+          <img src="/Nasr/assets/aliimg.png"  alt="Illustrated portrait of Alireza wearing an orange jacket" className="hero-portrait" />
           <div className="availability-pill"><span className="availability-dot"></span> Available for new projects</div>
           <div className="floating-code-card floating-code-card--top" aria-hidden="true">
             <span className="code-card-dots"><i></i><i></i><i></i></span>
@@ -151,7 +151,7 @@ export default function Home() {
               Let's Work Together
               <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m0 0-4.5-4.5M15 10l-4.5 4.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
-            <a href="/assets/your-cv.pdf" download className="button button--ghost">Download CV  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.75v9.5m0 0 3.5-3.5M10 12.25l-3.5-3.5M3.5 13.75v2.5h13v-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a>
+            <a href="/Nasr/assets/your-cv.pdf" download className="button button--ghost">Download CV  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.75v9.5m0 0 3.5-3.5M10 12.25l-3.5-3.5M3.5 13.75v2.5h13v-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a>
           </div>
 
           {/* <div class="mt-12 flex flex-wrap items-center gap-x-7 gap-y-4 text-sm text-white/60">
@@ -296,24 +296,24 @@ export default function Home() {
           <div className="flex justify-end align-center max-lg:justify-center  ">
             <h2>Why Work<br />With <span>Me?</span></h2>
 
-            <img className="hidden-when-mobile" src="/assets/arrow.png" alt="AI support assistant interface with a 40 percent time reduction metric" loading="lazy" />
+            <img className="hidden-when-mobile" src="/Nasr/assets/arrow.png" alt="AI support assistant interface with a 40 percent time reduction metric" loading="lazy" />
           </div>
           
         </div>
         <div className="why-list">
           <article className="why-item">
             {/* <span class="why-number">01</span> */} 
-            <img className="why-number" src="/assets/comin.png" alt="" />
+            <img className="why-number" src="/Nasr/assets/comin.png" alt="" />
             <div><h3>Clear Communication</h3><p>Transparent updates and smooth collaboration throughout the project.</p></div>
             <span className="why-check" aria-hidden="true">↗</span>
           </article>
           <article className="why-item">
-            <img className="why-number" src="/assets/time.png" alt="" />
+            <img className="why-number" src="/Nasr/assets/time.png" alt="" />
             <div><h3>On-Time Delivery</h3><p>Clear timelines and reliable delivery — no surprises.</p></div>
             <span className="why-check" aria-hidden="true">↗</span>
           </article>
           <article className="why-item">
-            <img className="why-number" src="/assets/code.png" alt="" />
+            <img className="why-number" src="/Nasr/assets/code.png" alt="" />
             <div><h3>Clean &amp; Scalable Code</h3><p>Web applications designed for performance and future growth.</p></div>
             <span className="why-check" aria-hidden="true">↗</span>
           </article>
@@ -338,7 +338,7 @@ export default function Home() {
             <p>This project focuses on creating an LLM-driven assistant that gives technicians immediate, context-specific support using product manuals and technical documentation.</p>
             <div className="project-tags"><span>AI Assistant</span><span>LLM</span><span>Knowledge Base</span></div>
           </div>
-          <div className="project-image"><img src="/assets/AI%20Assistant%20Cuts%20Support%20Time%2040%25.png" alt="AI support assistant interface with a 40 percent time reduction metric" loading="lazy" /></div>
+          <div className="project-image"><img src="/Nasr/assets/AI%20Assistant%20Cuts%20Support%20Time%2040%25.png" alt="AI support assistant interface with a 40 percent time reduction metric" loading="lazy" /></div>
         </article>
 
         <article className="project-card" dir="rtl">
@@ -349,7 +349,7 @@ export default function Home() {
             <p>The HDetect intrusion-detection software provides a reliable solution for surveillance and theft prevention in apartments, gardens, industrial centers, offices, and commercial spaces.</p>
             <div className="project-tags"><span>Object Detection</span><span>AI</span><span>Real-time</span></div>
           </div>
-          <div className="project-image"><img src="/assets/HDetect%20Neon%20Object%20Detection.png" alt="HDetect object detection interface identifying objects in a camera view" loading="lazy" /></div>
+          <div className="project-image"><img src="/Nasr/assets/HDetect%20Neon%20Object%20Detection.png" alt="HDetect object detection interface identifying objects in a camera view" loading="lazy" /></div>
         </article>
 
         <article className="project-card" dir="rtl">
@@ -359,7 +359,7 @@ export default function Home() {
             <p>A face-recognition solution designed to support fast identity checks and secure access-control workflows.</p>
             <div className="project-tags"><span>Face Recognition</span><span>Security</span><span>Computer Vision</span></div>
           </div>
-          <div className="project-image"><img src="/assets/Neon%20Face%20Recognition%20Access%20Granted.png" alt="HFace facial recognition interface showing access granted" loading="lazy" /></div>
+          <div className="project-image"><img src="/Nasr/assets/Neon%20Face%20Recognition%20Access%20Granted.png" alt="HFace facial recognition interface showing access granted" loading="lazy" /></div>
         </article>
 
         <article className="project-card" dir="rtl">
@@ -369,7 +369,7 @@ export default function Home() {
             <p>The HPlate license-plate recognition software offers a reliable solution for managing and monitoring vehicle traffic.</p>
             <div className="project-tags"><span>License Plate</span><span>Recognition</span><span>Automation</span></div>
           </div>
-          <div className="project-image"><img src="/assets/Neon%20License%20Plate%20Recognition%20Dashboard.png" alt="HPlate license plate recognition dashboard and camera view" loading="lazy" /></div>
+          <div className="project-image"><img src="/Nasr/assets/Neon%20License%20Plate%20Recognition%20Dashboard.png" alt="HPlate license plate recognition dashboard and camera view" loading="lazy" /></div>
         </article>
 
         <article className="project-card project-card--progress" dir="rtl">
@@ -379,7 +379,7 @@ export default function Home() {
             <p>A platform for anonymous questions, answers, and feedback, allowing people to communicate through text or voice.</p>
             <div className="project-tags"><span>Anonymous</span><span>Q&amp;A</span><span>Voice &amp; Text</span></div>
           </div>
-          <div className="project-image"><img src="/assets/Askly%20Anonymous%20Feedback%20Platform.png" alt="Naghdeto anonymous question and feedback platform concept" loading="lazy" /></div>
+          <div className="project-image"><img src="/Nasr/assets/Askly%20Anonymous%20Feedback%20Platform.png" alt="Naghdeto anonymous question and feedback platform concept" loading="lazy" /></div>
         </article>
 
         <article className="project-card" dir="rtl">
@@ -390,7 +390,7 @@ export default function Home() {
             <p>A website introducing the Mircode group: its team members, projects, activities, and latest news.</p>
             <div className="project-tags"><span>Website</span><span>Team</span><span>Portfolio</span></div>
           </div>
-          <div className="project-image"><img src="/assets/Mircode%20Futuristic%20Team%20Showcase.png" alt="MirCode group website homepage preview" loading="lazy" /></div>
+          <div className="project-image"><img src="/Nasr/assets/Mircode%20Futuristic%20Team%20Showcase.png" alt="MirCode group website homepage preview" loading="lazy" /></div>
         </article>
       </div>
     </section>
@@ -411,7 +411,7 @@ export default function Home() {
   <footer className="site-footer border-t border-white/10">
     <div className="mx-auto flex max-w-[1384px] flex-col items-center justify-between gap-4 px-5 py-7 text-center text-sm text-white/45 sm:px-8 md:flex-row xl:px-0">
        <a href="#home" className="brand-lockup flex shrink-0 items-center gap-3" aria-label="Nasr home">
-        <img src="/assets/logo.png" className="w-28 h-28" alt="" />
+        <img src="/Nasr/assets/logo.png" className="w-28 h-28" alt="" />
         {/* <span class="font-brand text-[30px] leading-none tracking-wide text-white ">Nasr</span> */}
       </a>
 
