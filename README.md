@@ -54,3 +54,12 @@ npm start
 Tailwind به‌جای CDN هنگام build تولید می‌شود؛ کلاس‌های HTML اصلی حفظ شده‌اند. لینک‌های شبکه‌های اجتماعی نیز عین ورودی هستند.
 
 مراجع راه‌اندازی: [Next.js](https://nextjs.org/docs/app/getting-started/installation) و [Tailwind CSS 3](https://v3.tailwindcss.com/docs/guides/nextjs).
+
+
+## انتشار روی GitHub Pages
+
+در مخزن `alli1378/Nasr` وارد Settings → Pages شوید و Source را روی GitHub Actions بگذارید. سپس از تب Actions، workflow با نام Deploy Next.js to GitHub Pages را اجرا کنید. با هر push روی main نیز انتشار انجام می‌شود.
+
+آدرس سایت پس از انتشار موفق: https://alli1378.github.io/Nasr/
+
+workflow متغیر NEXT_PUBLIC_BASE_PATH را روی /Nasr تنظیم می‌کند؛ فایل‌های CSS، JavaScript، تصاویر و رزومه با این مسیر ساخته می‌شوند. خروجی استاتیک در out تولید می‌شود. برای توسعهٔ محلی همچنان npm run dev را اجرا کنید. برای پیش‌نمایش خروجی استاتیک، پوشهٔ out را با یک وب‌سرور استاتیک سرو کنید؛ دستور next start مخصوص خروجی export نیست.

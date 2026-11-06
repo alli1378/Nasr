@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Home() {
   const [preloaderStage, setPreloaderStage] = useState("visible");
   const [year, setYear] = useState(2026);
@@ -85,7 +87,7 @@ export default function Home() {
       </nav>
 
       <div className="flex items-center gap-3">
-        <a href="/Nasr/assets/your-cv.pdf" download className="button button--outline hidden sm:inline-flex">
+        <a href={`${basePath}/assets/your-cv.pdf`} download className="button button--outline hidden sm:inline-flex">
           Get My CV
           <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.75v9.5m0 0 3.5-3.5M10 12.25l-3.5-3.5M3.5 13.75v2.5h13v-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </a>
@@ -114,6 +116,7 @@ export default function Home() {
         <div className="hero-visual relative mx-auto mt-5 h-[510px] w-full max-w-[650px] sm:h-[610px] lg:mt-0 lg:h-[720px] lg:max-w-none">
           <div className="portrait-halo" aria-hidden="true"></div>
           <div className="portrait-frame" aria-hidden="true"></div>
+
           <img src="/Nasr/assets/aliimg.png"  alt="Illustrated portrait of Alireza wearing an orange jacket" className="hero-portrait" />
           <div className="availability-pill"><span className="availability-dot"></span> Available for new projects</div>
           <div className="floating-code-card floating-code-card--top" aria-hidden="true">
@@ -151,7 +154,7 @@ export default function Home() {
               Let's Work Together
               <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m0 0-4.5-4.5M15 10l-4.5 4.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
-            <a href="/Nasr/assets/your-cv.pdf" download className="button button--ghost">Download CV  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.75v9.5m0 0 3.5-3.5M10 12.25l-3.5-3.5M3.5 13.75v2.5h13v-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a>
+            <a href="/Nasr/assets/My-cv.pdf" download className="button button--ghost">Download CV  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.75v9.5m0 0 3.5-3.5M10 12.25l-3.5-3.5M3.5 13.75v2.5h13v-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a>
           </div>
 
           {/* <div class="mt-12 flex flex-wrap items-center gap-x-7 gap-y-4 text-sm text-white/60">
