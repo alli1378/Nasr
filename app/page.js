@@ -87,7 +87,7 @@ export default function Home() {
       </nav>
 
       <div className="flex items-center gap-3">
-        <a href={`${basePath}/assets/your-cv.pdf`} download className="button button--outline hidden sm:inline-flex">
+        <a href={`${basePath}/assets/My-cv.pdf`} download className="button button--outline hidden sm:inline-flex">
           Get My CV
           <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.75v9.5m0 0 3.5-3.5M10 12.25l-3.5-3.5M3.5 13.75v2.5h13v-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </a>
@@ -101,7 +101,7 @@ export default function Home() {
             <a href="#skills">Skill</a>
             <a href="#projects">Projects</a>
             {/* <a href="#about">About me</a> */}
-            <a href="/Nasr/assets/your-cv.pdf" download className="mobile-cv-link">Get My CV <span>↗</span></a>
+            <a href="/Nasr/assets/My-cv.pdf" download className="mobile-cv-link">Get My CV <span>↗</span></a>
           </nav>
         </details>
       </div>
