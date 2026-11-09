@@ -1,3 +1,4 @@
+
 :root {
   --ink: #130d21;
   --panel: #241a35;
@@ -240,67 +241,6 @@ button, summary { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 420px) {
   
 }
-@media (prefers-reduced-motion: no-preference) {
-  .hero-section {
-    --hero-entrance-easing: cubic-bezier(.22, 1, .36, 1);
-  }
-
-  .hero-section .hero-portrait {
-    animation: portfolio-portrait-in 850ms var(--hero-entrance-easing) both;
-  }
-
-  .hero-section .hero-copy > :nth-child(-n+5),
-  .hero-section .availability-pill,
-  .hero-section .floating-code-card {
-    animation: portfolio-rise-in 650ms var(--hero-entrance-easing) both;
-    animation-delay: var(--entrance-delay, 0ms);
-  }
-
-  .hero-copy > :nth-child(2) { --entrance-delay: 70ms; }
-  .hero-copy > :nth-child(3) { --entrance-delay: 140ms; }
-  .hero-copy > :nth-child(4) { --entrance-delay: 210ms; }
-  .hero-copy > :nth-child(5) { --entrance-delay: 280ms; }
-  .hero-section .availability-pill { --entrance-delay: 300ms; }
-  .hero-section .floating-code-card--top { --entrance-delay: 380ms; }
-  .hero-section .floating-code-card--bottom { --entrance-delay: 460ms; }
-
-  /* Keep the entrance at its first frame until the loading overlay is removed. */
-  #preloader ~ main .hero-section :is(
-    .hero-portrait, .hero-copy > :nth-child(-n+5), .availability-pill, .floating-code-card
-  ) {
-    animation-play-state: paused;
-  }
-
-  .mobile-menu[open] .mobile-menu-panel {
-    animation: portfolio-rise-in 220ms ease-out backwards;
-  }
-
-  @supports (animation-timeline: view()) {
-    .skill-progress span {
-      transform-origin: left center;
-      animation: portfolio-progress-fill linear both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 28%;
-    }
-  }
-}
-
-@keyframes portfolio-portrait-in {
-  0% { opacity: 0; transform: translateY(30px) rotate(-4deg) scale(.94); }
-  65% { opacity: 1; transform: translateY(-5px) rotate(1deg) scale(1.01); }
-  100% { opacity: 1; transform: none; }
-}
-
-@keyframes portfolio-rise-in {
-  from { opacity: 0; translate: 0 14px; }
-  to { opacity: 1; translate: none; }
-}
-
-@keyframes portfolio-progress-fill {
-  from { scale: 0 1; }
-  to { scale: 1 1; }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
