@@ -47,7 +47,7 @@ export default function Home() {
       ".availability-pill",
       ".floating-code-card",
       ".hero-section > div:last-child > div",
-      ".section-heading",
+      ".sectiheading",
       ".skill-card",
       ".why-title-block",
       ".why-item",
@@ -411,32 +411,6 @@ export default function Home() {
       </div>
     </section>
 
-    {/* PROJECTS */}
-    <section id="projects" className="section-wrap projects-section scroll-mt-24">
-      <div className="section-heading text-center">
-        <span className="section-kicker">A FEW THINGS I'VE BUILT</span>
-        <h2>Selected <span>Projects</span></h2>
-        <p>A mix of AI-powered products, computer-vision tools, and web experiences.</p>
-      </div>
-
-      <div className="mx-auto mt-14 flex max-w-[1384px] flex-col gap-5 px-5 sm:px-8 xl:px-0">
-    
-    <article className="why-item">
-      <img className="why-number" src="/Nasr/assets/time.png" alt="" />
-      <div><h3>On-Time Delivery</h3><p>Clear timelines and reliable delivery — no surprises.</p></div>
-      <span className="why-check" aria-hidden="true">↗</span>
-    </article>
-  
-
-  
-    <article className="why-item">
-      <img className="why-number" src="/Nasr/assets/code.png" alt="" />
-      <div><h3>Clean &amp; Scalable Code</h3><p>Web applications designed for performance and future growth.</p></div>
-      <span className="why-check" aria-hidden="true">↗</span>
-    </article>
-  
-</div>
-</section>
 
 {/* PROJECTS */}
 <section id="projects" className="section-wrap projects-section scroll-mt-24">
