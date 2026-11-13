@@ -4,7 +4,7 @@ import "./styles.css";
 export const metadata = {
   title: "Alireza Nasr | Web Developer",
   icons: {
-  icon: "/Nasr/assets/favicon.png",
+  icon: "/Nasr/assets/logo.png",
 },
   description:
     "Alireza Nasr — web developer crafting fast, accessible and delightful digital experiences.",
