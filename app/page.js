@@ -420,68 +420,145 @@ export default function Home() {
       </div>
 
       <div className="mx-auto mt-14 flex max-w-[1384px] flex-col gap-5 px-5 sm:px-8 xl:px-0">
-       <article className="project-card" dir="rtl">
-          <div className="project-copy" dir="ltr">
-        
-            <div className="project-meta"><span className="project-index">01</span><span className="project-category">AI SOLUTION</span></div>
-            <h3>Built an AI assistant that reduced technical support time by 40%.</h3>
-            <p>This project focuses on creating an LLM-driven assistant that gives technicians immediate, context-specific support using product manuals and technical documentation.</p>
-            <div className="project-tags"><span>AI Assistant</span><span>LLM</span><span>Knowledge Base</span></div>
-          </div>
-          <div className="project-image"><img src="/Nasr/assets/AI%20Assistant%20Cuts%20Support%20Time%2040%25.png" alt="AI support assistant interface with a 40 percent time reduction metric" loading="lazy" /></div>
-        </article>
+     <a href="#" className="block">
+    <article className="why-item">
+      <img className="why-number" src="/Nasr/assets/time.png" alt="" />
+      <div><h3>On-Time Delivery</h3><p>Clear timelines and reliable delivery — no surprises.</p></div>
+      <span className="why-check" aria-hidden="true">↗</span>
+    </article>
+  </a>
 
-        <article className="project-card" dir="rtl">
-          <div className="project-copy" dir="ltr">
-        
-            <div className="project-meta"><span className="project-index">02</span><span className="project-category">COMPUTER VISION</span></div>
-            <h3>HDetect <span className="project-subtitle">(Object Detection)</span></h3>
-            <p>The HDetect intrusion-detection software provides a reliable solution for surveillance and theft prevention in apartments, gardens, industrial centers, offices, and commercial spaces.</p>
-            <div className="project-tags"><span>Object Detection</span><span>AI</span><span>Real-time</span></div>
-          </div>
-          <div className="project-image"><img src="/Nasr/assets/HDetect%20Neon%20Object%20Detection.png" alt="HDetect object detection interface identifying objects in a camera view" loading="lazy" /></div>
-        </article>
+  <a href="#" className="block">
+    <article className="why-item">
+      <img className="why-number" src="/Nasr/assets/code.png" alt="" />
+      <div><h3>Clean &amp; Scalable Code</h3><p>Web applications designed for performance and future growth.</p></div>
+      <span className="why-check" aria-hidden="true">↗</span>
+    </article>
+  </a>
+</div>
+</div>
+</section>
 
-        <article className="project-card" dir="rtl">
-          <div className="project-copy" dir="ltr">
-            <div className="project-meta"><span className="project-index">03</span><span className="project-category">COMPUTER VISION</span></div>
-            <h3>HFace <span className="project-subtitle">(Face Recognition)</span></h3>
-            <p>A face-recognition solution designed to support fast identity checks and secure access-control workflows.</p>
-            <div className="project-tags"><span>Face Recognition</span><span>Security</span><span>Computer Vision</span></div>
-          </div>
-          <div className="project-image"><img src="/Nasr/assets/Neon%20Face%20Recognition%20Access%20Granted.png" alt="HFace facial recognition interface showing access granted" loading="lazy" /></div>
-        </article>
+{/* PROJECTS */}
+<section id="projects" className="section-wrap projects-section scroll-mt-24">
+  <div className="section-heading text-center">
+    <span className="section-kicker">A FEW THINGS I'VE BUILT</span>
+    <h2>Selected <span>Projects</span></h2>
+    <p>A mix of AI-powered products, computer-vision tools, and web experiences.</p>
+  </div>
 
-        <article className="project-card" dir="rtl">
-          <div className="project-copy" dir="ltr">
-            <div className="project-meta"><span className="project-index">04</span><span className="project-category">COMPUTER VISION</span></div>
-            <h3>HPlate <span className="project-subtitle">(License Plate Recognition)</span></h3>
-            <p>The HPlate license-plate recognition software offers a reliable solution for managing and monitoring vehicle traffic.</p>
-            <div className="project-tags"><span>License Plate</span><span>Recognition</span><span>Automation</span></div>
-          </div>
-          <div className="project-image"><img src="/Nasr/assets/Neon%20License%20Plate%20Recognition%20Dashboard.png" alt="HPlate license plate recognition dashboard and camera view" loading="lazy" /></div>
-        </article>
+  <div className="mx-auto mt-14 flex max-w-[1384px] flex-col gap-5 px-5 sm:px-8 xl:px-0">
+    <a href="https://simplyprimecrm.com/" className="block">
+      <article className="project-card" dir="rtl">
+        <div className="project-copy" dir="ltr">
+          <div className="project-meta"><span className="project-index">01</span><span className="project-category">AI SOLUTION</span></div>
+          <h3>Built an AI assistant that reduced technical support time by 40%.</h3>
+          <p>This project focuses on creating an LLM-driven assistant that gives technicians immediate, context-specific support using product manuals and technical documentation.</p>
+          <div className="project-tags"><span>AI Assistant</span><span>LLM</span><span>Knowledge Base</span></div>
+        </div>
+        <div className="project-image"><img src="/Nasr/assets/AI%20Assistant%20Cuts%20Support%20Time%2040%25.png" alt="AI support assistant interface with a 40 percent time reduction metric" loading="lazy" /></div>
+      </article>
+    </a>
 
-        <article className="project-card project-card--progress" dir="rtl">
-          <div className="project-copy" dir="ltr">
-            <div className="project-meta"><span className="project-index">05</span><span className="project-category project-category--progress">IN DEVELOPMENT</span></div>
-            <h3>Naghdeto <span className="project-subtitle">(Anonymous Q&amp;A Platform)</span></h3>
-            <p>A platform for anonymous questions, answers, and feedback, allowing people to communicate through text or voice.</p>
-            <div className="project-tags"><span>Anonymous</span><span>Q&amp;A</span><span>Voice &amp; Text</span></div>
+    <a
+      href="https://kimiaafrooz.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <article className="project-card" dir="rtl">
+        <div className="project-copy" dir="ltr">
+          <div className="project-meta">
+            <span className="project-index">01</span>
+            <span className="project-category">CORPORATE WEBSITE</span>
           </div>
-          <div className="project-image"><img src="/Nasr/assets/Askly%20Anonymous%20Feedback%20Platform.png" alt="Naghdeto anonymous question and feedback platform concept" loading="lazy" /></div>
-        </article>
+          <h3>
+            Kimia Afrooz Sepahan
+            <span className="project-subtitle"> (Corporate Website)</span>
+          </h3>
+          <p>
+            A corporate website presenting Kimia Afrooz Sepahan, a manufacturer
+            of mineral supplements for animal and poultry feed. The website
+            showcases DCP and MCP products, their specifications, and ways
+            to contact the company for product inquiries.
+          </p>
 
-        <article className="project-card" dir="rtl">
-          <div className="project-copy" dir="ltr">
-        
-            <div className="project-meta"><span className="project-index">06</span><span className="project-category">WEB DESIGN</span></div>
-            <h3>MirCode <span className="project-subtitle">(Team Website)</span></h3>
-            <p>A website introducing the Mircode group: its team members, projects, activities, and latest news.</p>
-            <div className="project-tags"><span>Website</span><span>Team</span><span>Portfolio</span></div>
+          <div className="project-tags">
+            <span>Corporate Website</span>
+            <span>Product Showcase</span>
+            <span>Animal Nutrition</span>
           </div>
-          <div className="project-image"><img src="/Nasr/assets/Mircode%20Futuristic%20Team%20Showcase.png" alt="MirCode group website homepage preview" loading="lazy" /></div>
-        </article>
+        </div>
+
+        <div className="project-image">
+          <img
+            src="/Nasr/assets/Kimiaafrooz.png"
+            alt="Kimia Afrooz Sepahan corporate website and mineral supplement products"
+            loading="lazy"
+          />
+        </div>
+      </article>
+    </a>
+
+    <a href="https://hoopadvision.com/" className="block">
+      <article className="project-card" dir="rtl">
+        <div className="project-copy" dir="ltr">
+          <div className="project-meta"><span className="project-index">02</span><span className="project-category">COMPUTER VISION</span></div>
+          <h3>HDetect <span className="project-subtitle">(Object Detection)</span></h3>
+          <p>The HDetect intrusion-detection software provides a reliable solution for surveillance and theft prevention in apartments, gardens, industrial centers, offices, and commercial spaces.</p>
+          <div className="project-tags"><span>Object Detection</span><span>AI</span><span>Real-time</span></div>
+        </div>
+        <div className="project-image"><img src="/Nasr/assets/HDetect%20Neon%20Object%20Detection.png" alt="HDetect object detection interface identifying objects in a camera view" loading="lazy" /></div>
+      </article>
+    </a>
+
+    <a href="https://hoopadvision.com/" className="block">
+      <article className="project-card" dir="rtl">
+        <div className="project-copy" dir="ltr">
+          <div className="project-meta"><span className="project-index">03</span><span className="project-category">COMPUTER VISION</span></div>
+          <h3>HFace <span className="project-subtitle">(Face Recognition)</span></h3>
+          <p>A face-recognition solution designed to support fast identity checks and secure access-control workflows.</p>
+          <div className="project-tags"><span>Face Recognition</span><span>Security</span><span>Computer Vision</span></div>
+        </div>
+        <div className="project-image"><img src="/Nasr/assets/Neon%20Face%20Recognition%20Access%20Granted.png" alt="HFace facial recognition interface showing access granted" loading="lazy" /></div>
+      </article>
+    </a>
+
+    <a href="https://hoopadvision.com/" className="block">
+      <article className="project-card" dir="rtl">
+        <div className="project-copy" dir="ltr">
+          <div className="project-meta"><span className="project-index">04</span><span className="project-category">COMPUTER VISION</span></div>
+          <h3>HPlate <span className="project-subtitle">(License Plate Recognition)</span></h3>
+          <p>The HPlate license-plate recognition software offers a reliable solution for managing and monitoring vehicle traffic.</p>
+          <div className="project-tags"><span>License Plate</span><span>Recognition</span><span>Automation</span></div>
+        </div>
+        <div className="project-image"><img src="/Nasr/assets/Neon%20License%20Plate%20Recognition%20Dashboard.png" alt="HPlate license plate recognition dashboard and camera view" loading="lazy" /></div>
+      </article>
+    </a>
+
+    <a href="#" className="block">
+      <article className="project-card project-card--progress" dir="rtl">
+        <div className="project-copy" dir="ltr">
+          <div className="project-meta"><span className="project-index">05</span><span className="project-category project-category--progress">IN DEVELOPMENT</span></div>
+          <h3>Naghdeto <span className="project-subtitle">(Anonymous Q&amp;A Platform)</span></h3>
+          <p>A platform for anonymous questions, answers, and feedback, allowing people to communicate through text or voice.</p>
+          <div className="project-tags"><span>Anonymous</span><span>Q&amp;A</span><span>Voice &amp; Text</span></div>
+        </div>
+        <div className="project-image"><img src="/Nasr/assets/Askly%20Anonymous%20Feedback%20Platform.png" alt="Naghdeto anonymous question and feedback platform concept" loading="lazy" /></div>
+      </article>
+    </a>
+
+    <a href="#" className="block">
+      <article className="project-card" dir="rtl">
+        <div className="project-copy" dir="ltr">
+          <div className="project-meta"><span className="project-index">06</span><span className="project-category">WEB DESIGN</span></div>
+          <h3>MirCode <span className="project-subtitle">(Team Website)</span></h3>
+          <p>A website introducing the Mircode group: its team members, projects, activities, and latest news.</p>
+          <div className="project-tags"><span>Website</span><span>Team</span><span>Portfolio</span></div>
+        </div>
+        <div className="project-image"><img src="/Nasr/assets/Mircode%20Futuristic%20Team%20Showcase.png" alt="MirCode group website homepage preview" loading="lazy" /></div>
+      </article>
+    </a>
       </div>
     </section>
 
