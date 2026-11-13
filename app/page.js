@@ -420,22 +420,21 @@ export default function Home() {
       </div>
 
       <div className="mx-auto mt-14 flex max-w-[1384px] flex-col gap-5 px-5 sm:px-8 xl:px-0">
-     <a href="#" className="block">
+    
     <article className="why-item">
       <img className="why-number" src="/Nasr/assets/time.png" alt="" />
       <div><h3>On-Time Delivery</h3><p>Clear timelines and reliable delivery — no surprises.</p></div>
       <span className="why-check" aria-hidden="true">↗</span>
     </article>
-  </a>
+  
 
-  <a href="#" className="block">
+  
     <article className="why-item">
       <img className="why-number" src="/Nasr/assets/code.png" alt="" />
       <div><h3>Clean &amp; Scalable Code</h3><p>Web applications designed for performance and future growth.</p></div>
       <span className="why-check" aria-hidden="true">↗</span>
     </article>
-  </a>
-</div>
+  
 </div>
 </section>
 
