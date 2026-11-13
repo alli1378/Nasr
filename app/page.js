@@ -35,6 +35,93 @@ export default function Home() {
     };
   }, []);
 
+  // Presentation only: reveal each existing element once per page mount.
+  useEffect(() => {
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (motion.matches || !("IntersectionObserver" in window)) return;
+
+    const elements = Array.from(document.querySelectorAll([
+      ".site-header > div",
+      ".hero-portrait",
+      ".hero-copy > *",
+      ".availability-pill",
+      ".floating-code-card",
+      ".hero-section > div:last-child > div",
+      ".section-heading",
+      ".skill-card",
+      ".why-title-block",
+      ".why-item",
+      ".project-card",
+      ".contact-section > .relative > *",
+      ".site-footer > div > *",
+    ].join(", ")));
+    const waiting = new Set(elements);
+
+    function finish(element) {
+      element.classList.remove("portfolio-reveal", "portfolio-reveal--waiting", "portfolio-reveal--visible");
+      element.style.removeProperty("--portfolio-delay");
+      element.removeEventListener("animationend", onAnimationEnd);
+    }
+
+    function onAnimationEnd(event) {
+      if (event.target === event.currentTarget && event.animationName.startsWith("portfolio-")) {
+        finish(event.currentTarget);
+      }
+    }
+
+    elements.forEach((element) => {
+      // Delay only adjacent siblings, so lower sections never wait for the whole page.
+      const siblings = elements.filter((item) => item.parentElement === element.parentElement);
+      element.style.setProperty("--portfolio-delay", `${Math.min(siblings.indexOf(element), 4) * 85}ms`);
+      element.classList.add("portfolio-reveal", "portfolio-reveal--waiting");
+      element.addEventListener("animationend", onAnimationEnd);
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting || !waiting.has(entry.target)) return;
+        waiting.delete(entry.target);
+        entry.target.classList.remove("portfolio-reveal--waiting");
+        entry.target.classList.add("portfolio-reveal--visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0, rootMargin: "0px 0px -24px 0px" });
+
+    // Keep entrances behind the original preloader until it has fully disappeared.
+    if (preloaderStage === "hidden") {
+      elements.forEach((element) => observer.observe(element));
+    }
+
+    function showAll() {
+      observer.disconnect();
+      waiting.clear();
+      elements.forEach(finish);
+    }
+
+    function onMotionChange(event) {
+      if (event.matches) showAll();
+    }
+
+    function onFocus(event) {
+      // Keyboard navigation must never land on an invisible control.
+      elements.forEach((element) => {
+        if (element.contains(event.target)) {
+          waiting.delete(element);
+          observer.unobserve(element);
+          finish(element);
+        }
+      });
+    }
+
+    motion.addEventListener("change", onMotionChange);
+    document.addEventListener("focusin", onFocus);
+    return () => {
+      showAll();
+      motion.removeEventListener("change", onMotionChange);
+      document.removeEventListener("focusin", onFocus);
+    };
+  }, [preloaderStage]);
+
   function handleMobileNavigation(event) {
     const link = event.target.closest("a");
     if (link) link.closest(".mobile-menu")?.removeAttribute("open");
@@ -198,14 +285,14 @@ export default function Home() {
       
         <div className="mr-2"> 
           <a
-          href="#"
+          href="https://wa.me/989035413026"
           target="_blank"
           className="w-16 h-16 rounded-full bg-[rgba(151,71,255,.09)] flex items-center justify-center border-2 border-[rgba(151,71,255,.15)]
                 text-white hover:border-[rgba(151,71,255,.95)] button
                 hover:from-[#FFE052] hover:to-[#FE7F05]
                 hover:text-white transition-all duration-300"
           >
-            <i className="fa-brands fa-pinterest text-2xl"></i>
+            <i className="fa-brands fa-whatsapp text-2xl"></i>
           </a>
         
         </div>
